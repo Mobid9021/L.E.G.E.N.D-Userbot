@@ -66,7 +66,7 @@ async def _(event):
         
 CMD_HELP.update({
     "ping":
-    "`.fping`\
+    " `.fping`\
     \nUSAGE:A kind of ping with extra animation\
     \n\n`.ping`\
-    \nUSAGE:Shows you the ping speed of server"
+    \nUSAGE:Shows you the ping speed of server "
