@@ -1,4 +1,3 @@
-Uptime added by @Sur_vivor
 from telethon import events
 from datetime import datetime
 from telethon import events
