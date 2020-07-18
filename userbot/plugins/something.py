@@ -1,5 +1,3 @@
-''' Whatever Plugin by Noobs of Telegram i.e. @pureindialover '''
-
 from telethon import events
 import asyncio
 import os
