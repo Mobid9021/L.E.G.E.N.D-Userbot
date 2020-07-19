@@ -8,15 +8,6 @@ from telethon import events, errors, functions, types
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT
 from userbot.utils import admin_cmd
 
-PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
-if PMPERMIT_PIC is None:
-  WARN_PIC = "https://telegra.ph/file/a6d4fc88e9fd4880aff1c.jpg"
-else:
-  WARN_PIC = PMPERMIT_PIC
-
-PM_WARNS = {}
-PREV_REPLY_MESSAGE = {}
-
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**If You Want You Can Leave A Message Here ! My Boss Will Surely See And Reply To You Soon !**"
@@ -27,6 +18,16 @@ USER_BOT_NO_WARN = ("`Hello My Friend ! This is` **F.R.I.D.A.Y**\n"
                     f"{DEFAULTUSER} is Busy ! Please Don't Spam My Masters Inbox\n\n"
                     f"{CUSTOM_MIDDLE_PMP} \n\n"
                     "**Kindly Send** `/start` **If You Want To Register Your Request**")
+
+
+PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
+if PMPERMIT_PIC is None:
+  WARN_PIC = "https://telegra.ph/file/08a590d1edd8852989669.jpg"
+else:
+  WARN_PIC = PMPERMIT_PIC
+
+PM_WARNS = {}
+PREV_REPLY_MESSAGE = {}
 
 
 if Var.PRIVATE_GROUP_ID is not None:
