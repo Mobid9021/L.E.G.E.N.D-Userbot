@@ -1,0 +1,17 @@
+.setgpic
+.promote(?: |$)(.*)
+.demote(?: |$)(.*)
+.ban(?: |$)(.*)
+.unban(?: |$)(.*)
+.mute(?: |$)(.*)
+.unmute(?: |$)(.*)
+.ungmute(?: |$)(.*)
+.gmute(?: |$)(.*)
+.delusers(?: |$)(.*)
+.adminlist
+.pin(?: |$)(.*)
+.kick(?: |$)(.*)
+.users ?(.*)
+
+ Use .unload admin to remove this plugin
+            © Friday Userbot 
