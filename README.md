@@ -15,9 +15,10 @@ Best User Bot To Manage Your Telegram Account
 
 ### Inspired By Friday
 ### Credits : FridayUserBot
-###           CatUserbot
-###           WolfUserBot          
-          
+###               CatUserbot
+###               WolfUserBot          
+###               Munnipopz
+ 
 ### This Bot is Made With care No Adult Contents and Abusive Memes. If Any Tell in Issue Column With Command Name.
 ### For any query or want to know how it works join Group And Channel 
 
