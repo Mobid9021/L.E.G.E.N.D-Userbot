@@ -13,10 +13,16 @@ Best User Bot To Manage Your Telegram Account
 
 ## By Team #J.A.R.V.I.S™
 
+### Inspired By Friday
+### Credits : FridayUserBot
+###           CatUserbot
+###           WolfUserBot          
+          
+### This Bot is Made With care No Adult Contents and Abusive Memes. If Any Tell in Issue Column With Command Name.
 ### For any query or want to know how it works join Group And Channel 
 
 <a href="https://t.me/jarvissupportofficial"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="https://t.me/jarvisOT"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/joinchat/R5-ZBEdh9Uzix53RWtmHiA"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 ## Installing Heroku 
 
@@ -32,7 +38,7 @@ Best User Bot To Manage Your Telegram Account
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/starkGang/Fridayuserbot
+git clone https://github.com/jarvis210904/JARVISuserbot/
 cd Userbot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
