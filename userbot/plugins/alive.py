@@ -1,4 +1,4 @@
-"""Check if userbot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
+"""Check if userbot alive."""
 import asyncio
 from telethon import events
 from uniborg.util import admin_cmd
