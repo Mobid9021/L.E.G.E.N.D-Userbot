@@ -2,7 +2,7 @@ from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 print ("")
 print ("")
-print(""" To Friday String Generator By StarkGang""")
+print(""" To J.A.R.V.I.S String Generator By Jarvis""")
 print("""Kindly Enter Your Details To Continue ! """)
 
 API_KEY = '1754367'
@@ -15,11 +15,10 @@ while True:
       client.send_message("me", f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` And Visit @FridayOT For Any Help !")
       print("You telegramString session successfully stored in your telegram, please check your Telegram Saved Messages ")
       print("Store it safe !!")
+      print("Thanks For Choosing JARVIS Service. Hope that You will Have a Goodtime With Us!....)
   except:
    print ("")
    print ("Wrong phone number \n make sure its with correct country code. Example : +919961998999 ! Kindly Retry")
    print ("")
    continue
   break
-    
-= 
