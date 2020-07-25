@@ -10,9 +10,9 @@ from userbot import ALIVE_NAME
 
 naam = str(ALIVE_NAME)
 
-bot = "@FridayUserobot"
+bot = "@jarvisotbot"
 
-@borg.on(admin_cmd("friday ?(.*)"))
+@borg.on(admin_cmd("jarvis ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -36,7 +36,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/helpme")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Check Out Sir**\n`Check out` [FRIDAY](https://github.com/STARKGANG/Fridayuserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Check Out Sir**\n`Check out` [JARVIS](https://github.com/STARKGANG/Fridayuserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!`")
@@ -47,7 +47,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/movies")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Here is Movie**\n`Check out` [FRIDAY](https://github.com/STARKGANG/Fridayuserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Here is Movie**\n`Check out` [JARVIS](https://github.com/STARKGANG/Fridayuserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!`")
@@ -58,7 +58,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/music")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Hoi ! Here iz music**\n`Check out` [FRIDAY](https://github.com/STARKGANG/Fridayuserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Hoi ! Here iz music**\n`Check out` [JARVIS](https://github.com/STARKGANG/Fridayuserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!`")
@@ -69,7 +69,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/meme")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Lol**\n`Check out` [FRIDAY](https://github.com/STARKGANG/Fridayuserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Lol**\n`Check out` [JARVIS](https://github.com/STARKGANG/Fridayuserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!`")
