@@ -1,7 +1,7 @@
 # JARVIS
 
 <p align="center">
-<img src="jarvis.png" alt="JARVIS USERBOT">
+<img src="jarvis.jpg" alt="JARVIS USERBOT">
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
