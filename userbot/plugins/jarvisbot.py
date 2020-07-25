@@ -9,7 +9,7 @@ import asyncio
 
 from userbot.utils import admin_cmd
 
-@borg.on(admin_cmd("fridaybot"))
+@borg.on(admin_cmd("jarvisbot"))
 async def _(event):
     if event.fwd_from:
         return
@@ -20,7 +20,7 @@ async def _(event):
     await event.edit("Thanks")
     animation_chars = [
             "Click here to Go to Telegraph",
-            "[Click Here For 💗💗💗](https://telegra.ph/file/9fccfa7b9077bbd87e53d.jpg)"
+            "[Click Here For 💗💗💗](https://telegra.ph/Anonymous-07-25)"
          ]
             
 
