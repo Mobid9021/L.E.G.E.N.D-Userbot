@@ -6,16 +6,13 @@ from uniborg.util import admin_cmd
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
-PM_IMG = "https://telegra.ph/file/a6d4fc88e9fd4880aff1c.jpg"
-pm_caption = "`💠FRIDAY IS💠:` **ONLINE**\n\n"
-pm_caption += "**📥Education Channel📥** : [📘Join My Education channel📗](https://t.me/educatorchannelofficial)\n\n"
-pm_caption += "**📥My Educational Group📥** : [📘Join My Education Group📗](https://t.me/educatorchannelofficial)\n\n"
-
+PM_IMG = "https://telegra.ph/Anonymous-07-25"
+pm_caption = "`💠JARVIS IS💠:` **ONLINE**\n\n"
 pm_caption += "**🔖SYSTEM STATUS🔖**\n\n"
 pm_caption += "`⚖️TELETHON VERSION⚖️:` **6.0.9**\n`Python:` **3.7.4**\n\n"
 pm_caption += "`🎢DATABASE STATUS🎢:` **Functional**\n\n"
 pm_caption += "**🧮Current Branch🧮** : `master`\n\n"
-pm_caption += "**📬Friday OS📬** : `3.14`\n\n"
+pm_caption += "**📬JARVIS OS📬** : `3.14`\n\n"
 pm_caption += "**💡Current Sat💡** : `StarkGangSat-2.25`\n\n"
 pm_caption += f"*💜*My Boss💜** : {DEFAULTUSER} \n\n"
 pm_caption += "**💥Heroku Database💥** : `AWS - Working Properly`\n\n"
