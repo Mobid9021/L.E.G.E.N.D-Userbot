@@ -10,7 +10,7 @@ import asyncio
 
 from userbot.utils import admin_cmd
 
-@borg.on(admin_cmd("Friday"))
+@borg.on(admin_cmd("Jarvis"))
 async def _(event):
     if event.fwd_from:
         return
@@ -21,7 +21,7 @@ async def _(event):
     await event.edit("for our support group")
     animation_chars = [
             "Click here",
-            "[Support Group](https://t.me/FRIDAYSUPPORTOFFICIAL)"
+            "[Support Group](https://t.me/joinchat/R5-ZBEdh9Uzix53RWtmHiA)"
          ]
             
 
