@@ -14,45 +14,6 @@ from telethon.tl.types import MessageEntityMentionName
 from userbot import CMD_HELP
 from userbot.utils import register
 
-
-# ================= CONSTANT =================
-
-
-GAMBAR_TITIT = """
-🍆🍆
-🍆🍆🍆
-  🍆🍆🍆
-    🍆🍆🍆
-     🍆🍆🍆
-       🍆🍆🍆
-        🍆🍆🍆
-         🍆🍆🍆
-          🍆🍆🍆
-          🍆🍆🍆
-      🍆🍆🍆🍆
- 🍆🍆🍆🍆🍆🍆
- 🍆🍆🍆  🍆🍆🍆
-    🍆🍆       🍆🍆
-"""
-
-# ===========================================
-
-@register(outgoing=True, pattern="^.(yes|no|maybe|decide)$")
-async def decide(event):
-    decision = event.pattern_match.group(1).lower()
-    message_id = event.reply_to_msg_id if event.reply_to_msg_id else None
-    if decision != "decide":
-        r = requests.get(f"https://yesno.wtf/api?force={decision}").json()
-    else:
-        r = requests.get(f"https://yesno.wtf/api").json()
-    await event.delete()
-    await event.client.send_message(event.chat_id,
-                                    str(r["answer"]).upper(),
-                                    reply_to=message_id,
-                                    file=r["image"])
-
-
-
 @register(outgoing=True, pattern="^.fp$")
 async def facepalm(e):
     """ Facepalm  🤦‍♂ """
@@ -152,19 +113,7 @@ async def nih(e):
                      "`\n                    `"
                      "`\n(\_/)`"
                      "`\n(•_•)`"
-                     "`\n🌹<\ *`")
-
-
-@register(outgoing=True, pattern="^.hello$")  
-async def gtfo(e):
-   if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`\n█████████`" 
-                     "`\n█▄█████▄█`"    
-                     "`\n█▼▼▼▼▼`"       
-                     "`\n█  Hello Man`"
-                     "`\n█▲▲▲▲▲`"
-                     "`\n█████████`"
-                    "`\n ██   ██`")               
+                     "`\n🌹<\ *`")            
 
 
 @register(outgoing=True, pattern="^.ml(?: |$)(.*)")
@@ -232,40 +181,6 @@ async def nou(e):
                      "`\n┫┈┈  NoU\n┃┈╰╰━━━━╯`"
                      "`\n┗━━┻━┛`")
 
-
-
-@register(outgoing=True, pattern="^.mf$")  
-async def gtfo(e):
-   if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit(
-"\n......................................../´¯/) "
-"\n......................................,/¯../ "
-"\n...................................../..../ "
-"\n..................................../´.¯/"
-"\n..................................../´¯/"
-"\n..................................,/¯../ "
-"\n................................../..../ "
-"\n................................./´¯./"
-"\n................................/´¯./"
-"\n..............................,/¯../ "
-"\n............................./..../ "
-"\n............................/´¯/"
-"\n........................../´¯./"
-"\n........................,/¯../ "
-"\n......................./..../ "
-"\n....................../´¯/"
-"\n....................,/¯../ "
-"\n.................../..../ "
-"\n............./´¯/'...'/´¯¯`·¸ "
-"\n........../'/.../..../......./¨¯\ "
-"\n........('(...´...´.... ¯~/'...') "
-"\n.........\.................'...../ "
-"\n..........''...\.......... _.·´ "
-"\n............\..............( "
-"\n..............\.............\...")
-
-
-
 @register(outgoing=True, pattern="^.sayhi$")
 async def shalom(e):
     await e.edit(
@@ -283,59 +198,3 @@ async def shalom(e):
         "\n💛🔷💛💛💛💛️💛🔷💛"
         "\n💛💛💛💛💛💛💛💛💛")
 
-@register(outgoing=True, pattern=r"^\.(?:penis|dick)\s?(.)?")
-async def emoji_penis(e):
-    emoji = e.pattern_match.group(1)
-    titid = GAMBAR_TITIT
-    if emoji:
-        titid = titid.replace('🍆', emoji)
-    await e.edit(titid)
-
-
-@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
-
-async def _(event):
-
-    if event.fwd_from:
-
-        return
-
-    animation_interval = 0.3
-
-    animation_ttl = range(0, 100)
-
-    input_str = event.pattern_match.group(1)
-
-    if input_str == "muth":
-
-        await event.edit(input_str)
-
-        animation_chars = [
-
-            "8✊️===D",
-
-            "8=✊️==D",
-
-            "8==✊️=D",
-
-            "8===✊️D",
-
-            "8==✊️=D",
-
-            "8=✊️==D",
-
-            "8✊️===D",
-
-            "8===✊️D💦",
-
-            "8==✊️=D💦💦",
-
-            "8=✊️==D💦💦💦"
-
-        ]
-
-        for i in animation_ttl:
-        
-            await asyncio.sleep(animation_interval)
-        
-            await event.edit(animation_chars[i % 8])
