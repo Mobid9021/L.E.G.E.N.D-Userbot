@@ -2,7 +2,7 @@ from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 print ("")
 print ("")
-print(""" To J.A.R.V.I.S String Generator By Jarvis""")
+print(""" Welcome To J.A.R.V.I.S String Generator By Jarvis""")
 print("""Kindly Enter Your Details To Continue ! """)
 
 API_KEY = '1754367'
