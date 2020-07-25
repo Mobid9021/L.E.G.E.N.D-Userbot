@@ -244,7 +244,7 @@ async def _(event):
 		await event.edit("".join(deq))
 		deq.rotate(1)        
         
-@borg.on(admin_cmd(pattern=f"snake", outgoing=True))
+@borg.on(admin_cmd(pattern=f"asnake", outgoing=True))
 
 async def _(event):
 
@@ -321,7 +321,7 @@ async def _(event):
             await event.edit(animation_chars[i % 27])  
             
             
-@borg.on(admin_cmd(pattern=f"solarsystem", outgoing=True))
+@borg.on(admin_cmd(pattern=f"asolarsystem", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -480,7 +480,7 @@ async def _(event):
             await event.edit(animation_chars[i % 549755813888])    
             
             
-@borg.on(admin_cmd(pattern=r"star", outgoing=True))
+@borg.on(admin_cmd(pattern=r"astar", outgoing=True))
 async def _(event):
 	if event.fwd_from:
 		return
