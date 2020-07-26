@@ -21,8 +21,6 @@ pm_caption += "⛔️Copyright : By⛔️ [StarkGang@Github](GitHub.com/StarkGan
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
     chat = await alive.get_chat()
-    await alive.delete()
     """ For .alive command, check if the bot is running.  """
-    await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
-    await alive.delete() 
+    await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption
     
