@@ -21,7 +21,7 @@ pm_caption += f"*💜*My Boss💜** : {DEFAULTUSER} \n\n"
 pm_caption += "**💥Heroku Database💥** : `AWS - Working Properly`\n\n"
 pm_caption += "**🚫License🚫** : [MIT Licence](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/LICENSE)\n\n"
 pm_caption += "⛔️Copyright : By⛔️ [JARVIS@Github](GitHub.com/jarvis210409)\n\n\n\n"
-pm_caption += " [Deploy JARVIS]"
+pm_caption += " [Deploy JARVIS](https://telegra.ph/JARVIS-UserBot-07-26)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
