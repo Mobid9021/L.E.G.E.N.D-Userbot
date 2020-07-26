@@ -6,7 +6,7 @@ from uniborg.util import admin_cmd
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
-PM_IMG = "https://telegra.ph/file/72b8334d6855f6a9c9839.jpg"
+PM_IMG = "https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/jarvis.jpg?raw=true"
 pm_caption = "`💠FRIDAY IS💠:` **ONLINE**\n\n"
 pm_caption += "**📥Support Channel📥** : [🔰Join Support Channel🔰](https://t.me/jarvissupportofficial)\n\n"
 pm_caption += "**📥Support Group📥** : [🔰Join Support Group🔰](https://t.me/joinchat/R5-ZBEdh9Uzix53RWtmHiA)\n\n"
