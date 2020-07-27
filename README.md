@@ -32,7 +32,7 @@ Best User Bot To Manage Your Telegram Account
 
 ## GET STRING SESSION FROM REPL RUN 
 
-[![Run on Repl.it](https://repl.it/badge/github/jarvis210904/Jarvis)](https://jarvis.jarvis210904.repl.run)
+[![Run on Repl.it](https://repl.it/badge/github/jarvis210904/Jarvis)](https://jarvisuserbot.jarvis210904.repl.run)
 
 
 ### The Normal Way
