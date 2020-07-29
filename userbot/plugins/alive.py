@@ -9,13 +9,13 @@ pm_caption = "**ᴊᴀʀᴠɪꜱ ɪꜱ ᴏɴʟɪɴᴇ**\n"
 
 pm_caption += f"**M̴y̴ ̴B̴o̴s̴s̴**            : {DEFAULTUSER}\n"
 
-pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ          : [ᴡᴇʟᴄᴏᴍᴇ](https://t.me/joinchat/Oq1jlViv1uS2AkOG9MKChw)\n"
+pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ           : [ᴊᴏɪɴ](https://t.me/jarvissupportofficial)\n"
 
-pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ     : [ᴡᴇʟᴄᴏᴍᴇ](https://t.me/joinchat/AAAAAEdoBMaQSuvk0xFNCw)\n"
+pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ         : [ᴊᴏɪɴ](https://t.me/joinchat/R5-ZBEdh9Uzix53RWtmHiA)\n"
 
-pm_caption += "ʟɪᴄᴇɴꜱᴇ              : [ᴍɪᴛ ʟɪᴄᴇɴꜱᴇ](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/LICENSE)\n"
+pm_caption += "ʟɪᴄᴇɴꜱᴇ                 : [ᴍɪᴛ ʟɪᴄᴇɴꜱᴇ](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/LICENSE)\n"
 
-pm_caption += "ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ    :  [𝙅𝘼𝙍𝙑𝙄𝙎](GitHub.com/jarvis210904)\n"
+pm_caption += "ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ            : [𝙅𝘼𝙍𝙑𝙄𝙎](GitHub.com/jarvis210904)\n"
 
 pm_caption += " [┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/Munnipopz)"
 #@command(outgoing=True, pattern="^.alive$")
