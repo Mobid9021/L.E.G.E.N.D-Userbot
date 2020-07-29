@@ -1,4 +1,4 @@
-"""Check if userbot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
+""Check if userbot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
 #IMG CREDITS: @WhySooSerious
 import asyncio
 from telethon import events
@@ -7,21 +7,19 @@ from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = "https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/jarvis.jpg?raw=true"
-pm_caption = "`JARVIS STATUS:` **ONLINE**\n\n"
-pm_caption += "**Support Channel** : [🔰Join Support Channel🔰](https://t.me/jarvissupportofficial)\n\n"
-pm_caption += "**Support Group** : [🔰Join Support Group🔰](https://t.me/joinchat/R5-ZBEdh9Uzix53RWtmHiA)\n\n"
+pm_caption = "**ᴊᴀʀᴠɪꜱ ɪꜱ ᴏɴʟɪɴᴇ**\n"
 
-pm_caption += "**SYSTEM STATUS**\n\n"
-pm_caption += "`TELETHON VERSION:` **6.0.9**\n`Python:` **3.7.4**\n\n"
-pm_caption += "`DATABASE STATUS:` **Functional**\n\n"
-pm_caption += "**Current Branch** : `master`\n\n"
-pm_caption += "**JARVIS OS** : `3.25`\n\n"
-pm_caption += "**Current Sat** : `JARVISSat-2.25`\n\n"
-pm_caption += f"**My Boss** : {DEFAULTUSER} \n\n"
-pm_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
-pm_caption += "**License** : [MIT Licence](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/LICENSE)\n\n"
-pm_caption += "Copyright : By [JARVIS@Github](GitHub.com/jarvis210409)\n\n\n\n"
-pm_caption += " [Deploy JARVIS](https://telegra.ph/JARVIS-UserBot-07-26)"
+pm_caption += f"**M̴y̴ ̴B̴o̴s̴s̴**            : {DEFAULTUSER}\n"
+
+pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ          : [ᴡᴇʟᴄᴏᴍᴇ](https://t.me/joinchat/Oq1jlViv1uS2AkOG9MKChw)\n"
+
+pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ     : [ᴡᴇʟᴄᴏᴍᴇ](https://t.me/joinchat/AAAAAEdoBMaQSuvk0xFNCw)\n"
+
+pm_caption += "ʟɪᴄᴇɴꜱᴇ              : [ᴍɪᴛ ʟɪᴄᴇɴꜱᴇ](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/LICENSE)\n"
+
+pm_caption += "ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ    :  [𝙅𝘼𝙍𝙑𝙄𝙎](GitHub.com/jarvis)\n"
+
+pm_caption += " [┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/Munnipopz)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
@@ -30,4 +28,3 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
     await alive.delete() 
-    
