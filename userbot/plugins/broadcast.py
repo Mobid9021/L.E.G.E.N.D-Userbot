@@ -1,6 +1,6 @@
 # Fully Written by @HeisenbergTheDanger (Keep credits else gay)
 # Permission Seeked By @StarkXD - Approved
-
+# Credits - FRIDAY UserBot
 import asyncio
 import datetime
 from telethon import events
