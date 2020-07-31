@@ -140,8 +140,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("**The Latest Branch** `Master` **Has Been Pushed To Heroku** \n**Now Trying A Restart To Complete Updation Process ⚠️ !!** To Check If I am Alive Just Do `.alive` or `.help` !!!! Thank For Using JARVIS Userbot Service (◍•ᴗ•◍)❤")
-    remote.push(refspec=refspec)
+    await message.edit("**ᴛʜᴇ ʟᴀᴛᴇꜱᴛ ʙʀᴀɴᴄʜ** `ᴍᴀꜱᴛᴇʀ` **ʜᴀꜱ ʙᴇᴇɴ ᴘᴜꜱʜᴇᴅ ᴛᴏ ʜᴇʀᴏᴋᴜ▣™** \n**ɴᴏᴡ ᴛʀʏɪɴɢ ᴀ ʀᴇꜱᴛᴀʀᴛ ᴛᴏ ᴄᴏᴍᴘʟᴇᴛᴇ ᴜᴘᴅᴀᴛɪᴏɴ ᴘʀᴏᴄᴇꜱꜱ ⚠️ !!** ᵀᵒ ᶜʰᵉᶜᵏ ᴵᶠ ᴵ ᵃᵐ ᴬˡⁱᵛᵉ ᴶᵘˢᵗ ᴰᵒ `.ᵃˡⁱᵛᵉ` ᵒʳ `.ʰᵉˡᵖ` !!!! ᵀʰᵃⁿᵏ ᶠᵒʳ ᵁˢⁱⁿᵍ ᴊᴀʀᴠɪꜱ ᴜꜱᴇʀʙᴏᴛ ꜱᴇʀᴠɪᴄᴇ➲\n⇩⇩⇩⇩⇩⇩⇩⇩\n💟J.A.R.V.I.S💟")    remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
 
