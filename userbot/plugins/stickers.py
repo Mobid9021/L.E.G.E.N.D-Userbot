@@ -27,11 +27,7 @@ from telethon.tl.types import (
     MessageMediaPhoto
 )
 from userbot.utils import admin_cmd
-from userbot import ALIVE_NAME, CUSTOM_STICKER_PACK_NAME, CUSTOM_ANIMATED_PACK_NAME
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Who is this"
-CUSTOM_STICKER_NAME =str(CUSTOM_STICKER_PACK_NAME) if CUSTOM_STICKER_PACK_NAME else "My Boss Friday Volume Pack One"
-CUSTOM_ANIME_PACK = str(CUSTOM_ANIMATED_PACK_NAME) if CUSTOM_ANIMATED_PACK_NAME else "My Boss Animated Pack"
 FILLED_UP_DADDY = "Invalid pack selected."
 
 @borg.on(admin_cmd(pattern="kang ?(.*)"))
@@ -42,39 +38,38 @@ async def _(event):
         await event.edit("Reply to a photo to add to my personal sticker pack.")
         return
     reply_message = await event.get_reply_message()
-    sticker_emoji = "⚡"
+    sticker_emoji = "🤔"
     input_str = event.pattern_match.group(1)
     if input_str:
         sticker_emoji = input_str
 
     user = await bot.get_me()
-    if not user.username:
-        user.username = user.id
+    if not user.first_name:
+        user.first_name = user.id
     pack = 1
     userid = event.from_id
-    #packname = f"FRIDAY PACK"
-    #packshortname = f"FRIDAY_{userid}_ns"  # format: Uni_Borg_userid
-    if userid == 1263617196:
-        packname = f"@StarkGang Packs 🎭"
+    # Friday
+    if userid == 953414679:
+        packname = f"StarkGang Packs 🎭"
         packshortname = "StarkGangPack"
     else:
-        packname = f"{user.username}'s {pack}"
-        packshortname = f"FRIDAY_{userid}_Pack"
-    await event.edit("`Is It Legal ? Oh Yes it is !! \nLook That Way ! Let me Kang This ¯\_(ツ)_/¯`")
+        packname = f"{DEFAULTUSER}'s JARVIS Vol.{pack}"
+        packshortname = f"JARVIS_{userid}_pack"
+    await event.edit("Hey That Sticker Looks Nice ! Mind If I Kang That ? ")
 
     is_a_s = is_it_animated_sticker(reply_message)
-    file_ext_ns_ion = "@FRIDAYOT.png"
+    file_ext_ns_ion = "JARVIS Userbot.png"
     file = await borg.download_file(reply_message.media)
     uploaded_sticker = None
     if is_a_s:
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
-        if userid == 813878981:
-            packname = f"StarkGang Ka Pack"
-            packshortname = "StarkGangisgreat"
+        if userid == 1263617196:
+            packname = f"Fridays Pack"
+            packshortname = "Friday_Packz"
         else:
-            packname = f"{user.username}'s {pack}"
-            packshortname = f"FRIDAY_{userid}" # format: Uni_Borg_userid
+            packname = f"{DEFAULTUSER}'s Friday Animated Vol.{pack}"
+            packshortname = f"Friday_{userid}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
         return
@@ -90,7 +85,7 @@ async def _(event):
         now = datetime.datetime.now()
         dt = now + datetime.timedelta(minutes=1)
         if not await stickerset_exists(bot_conv, packshortname):
-            await event.edit("`Creating a new pack!`")
+            await event.edit("Creating New Pack !")
             await silently_send_message(bot_conv, "/cancel")
             if is_a_s:
                 response = await silently_send_message(bot_conv, "/newanimated")
@@ -134,13 +129,13 @@ async def _(event):
                 while response.text == FILLED_UP_DADDY:
                     pack += 1
                     prevv = int(pack) - 1
-                    packname = f"{user.username}'s {pack}"
-                    packshortname = f"Vol_{pack}_with_{user.username}"
-                    #if userid == 948408212:
-                       # packname = f"{user.username}'s {pack}"
-                       # packshortname = "Vol._{pack}_FRIDAY_ke_locker_me"
+                    packname = f"{DEFAULTUSER}'s Friday Vol.{pack}"
+                    packshortname = f"Vol_{pack}_with_{userid}"
+                    #if userid == 1263617196:
+                       # packname = f"{user.first_name}'s Friday Vol.{pack}"
+                       # packshortname = "Vol._{pack}_IndianBhai_ke_locker_me"
                    # else:
-                       # packname = f"Vol._{pack}_FRIDAY{userid}"
+                       # packname = f"Vol._{pack}_Friday{userid}"
                         #packshortname = f"Vol._{pack}_Friday_{userid}_ns"
                     if not await stickerset_exists(bot_conv, packshortname):
                         await event.edit("**Pack No. **" + str(prevv) + "** full! Making a new Pack, Vol. **" + str(pack))
@@ -194,7 +189,7 @@ async def _(event):
                 await silently_send_message(bot_conv, response)
                 await silently_send_message(bot_conv, sticker_emoji)
                 await silently_send_message(bot_conv, "/done")
-    await event.edit(f"**Sticker** `Kanged Legally And It Can Be Found` [⚡Here⚡](t.me/addstickers/{packshortname})")
+    await event.edit(f"Sticker Kanged And Can Be Found [Here](t.me/addstickers/{packshortname})")
 
 
 @borg.on(admin_cmd(pattern="packinfo"))
