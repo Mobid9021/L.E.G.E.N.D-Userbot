@@ -9,9 +9,9 @@ pm_caption = "**ᴊᴀʀᴠɪꜱ ɪꜱ ᴏɴʟɪɴᴇ**\n"
 
 pm_caption += f"**M̴y̴ ̴B̴o̴s̴s̴**            : {DEFAULTUSER}\n"
 
-pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ           : [ᴊᴏɪɴ](https://t.me/jarvissupportofficial)\n"
+pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ          : [ᴊᴏɪɴ](https://t.me/jarvissupportofficial)\n"
 
-pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ         : [ᴊᴏɪɴ](https://t.me/joinchat/R5-ZBEdh9Uzix53RWtmHiA)\n"
+pm_caption += "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ        : [ᴊᴏɪɴ](https://t.me/joinchat/R5-ZBEdh9Uzix53RWtmHiA)\n"
 
 pm_caption += "ʟɪᴄᴇɴꜱᴇ                 : [ᴍɪᴛ ʟɪᴄᴇɴꜱᴇ](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/LICENSE)\n"
 
