@@ -62,7 +62,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         chat = await event.get_chat()
         if event.is_private:
           if chat.id == 1263617196:
-            await event.edit("You bitch tried to block my Creator, now i will sleep for 100 seconds")
+            await event.edit("Master , You tried to block my Creator Dont Do That Again ,Penality :- now i will sleep for 100 seconds")
             await asyncio.sleep(100)
           else:
             if pmpermit_sql.is_approved(chat.id):
@@ -80,7 +80,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         reason = event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-          if chat.id == 1201641732:
+          if chat.id == 1393895701:
             await event.edit("Sorry, I Can't Disapprove My Master")
           else:
             if pmpermit_sql.is_approved(chat.id):
@@ -211,5 +211,5 @@ async def hehehe(event):
     if event.is_private:
         if not pmpermit_sql.is_approved(chat.id):
             pmpermit_sql.approve(chat.id, "**My Boss Is Best🔥**")
-            await borg.send_message(chat, "**This User Is My Dev ! So Auto Approved !!!!**")
+            await borg.send_message(chat, "**This User Is My Creator ! So Auto Approved !!!!**")
            
