@@ -1,4 +1,3 @@
-# For TeleBot.
 # Add G_BAN_LOGGER_GROUP as config var for it to work.
 
 """Globally Ban users from all the
