@@ -123,7 +123,7 @@
     "PM_LOGGR_BOT_API_ID": {
       "description": "Enter Valid Id. Required For Pm Logger Plugin Ignore If You Want [Not Usefull]",
       "required": false
-      "value":"",
+      "value": "",
     },
     "TZ": {
       "description": "Required for Correct Time for autopic get from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
@@ -132,8 +132,8 @@
     },
     "G_BAN_LOGGER_GROUP": {
       "description":"Enter A Valid Group ID For GBAN LOG"
-      "required":true
-      "value":"",
+      "required": true
+      "value": "",
   },
   "addons": [{
     "plan": "heroku-postgresql",
