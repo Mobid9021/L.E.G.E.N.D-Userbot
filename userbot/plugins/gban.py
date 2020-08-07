@@ -33,8 +33,8 @@ async def startgban(rk):
    except:
    	return await rkp.edit(f"`{JAVES_NNAME}:`**Error! Unknown user.**")
    if user:      
-        if user.id == 709723121:     
-    	             return await rkp.edit(f"`{JAVES_NNAME}:`**Error! This Is My Creator How Am i Supposed To Gban him.**")
+        if user.id == 1203294851 , 1318486004 :     
+    	             return await rkp.edit(f"`{JAVES_NNAME}:`**Error! This Is My Creator How Am I Supposed To Gban him. 😬😥 **")
         try:
           from userbot.modules.sql_helper.gmute_sql import gmute            
         except:
