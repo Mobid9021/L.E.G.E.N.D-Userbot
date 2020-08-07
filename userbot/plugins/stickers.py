@@ -38,7 +38,7 @@ async def _(event):
         await event.edit("Reply to a photo to add to my personal sticker pack.")
         return
     reply_message = await event.get_reply_message()
-    sticker_emoji = "🤔"
+    sticker_emoji = "😎"
     input_str = event.pattern_match.group(1)
     if input_str:
         sticker_emoji = input_str
@@ -65,11 +65,11 @@ async def _(event):
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
         if userid == 1263617196:
-            packname = f"Fridays Pack"
-            packshortname = "Friday_Packz"
+            packname = f"JARVIS Pack"
+            packshortname = "JARVIS_Packz"
         else:
-            packname = f"{DEFAULTUSER}'s Friday Animated Vol.{pack}"
-            packshortname = f"Friday_{userid}" # format: Uni_Borg_userid
+            packname = f"{DEFAULTUSER}'s JARVIS Animated Vol.{pack}"
+            packshortname = f"JARVIS_{userid}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
         return
@@ -129,7 +129,7 @@ async def _(event):
                 while response.text == FILLED_UP_DADDY:
                     pack += 1
                     prevv = int(pack) - 1
-                    packname = f"{DEFAULTUSER}'s Friday Vol.{pack}"
+                    packname = f"{DEFAULTUSER}'s JARVIS Vol.{pack}"
                     packshortname = f"Vol_{pack}_with_{userid}"
                     #if userid == 1263617196:
                        # packname = f"{user.first_name}'s Friday Vol.{pack}"
