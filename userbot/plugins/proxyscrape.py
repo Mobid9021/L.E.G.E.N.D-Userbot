@@ -11,11 +11,11 @@ from pySmartDL import SmartDL
 import os
 
 STARK_HTTP = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=all&ssl=all&anonymity=all" 
-HTTP_TXT = ("**Proxy Info** \nType: __HTTPS__ \nTimeOut: __10000__ \nCountry: __All__ \nSsl: All \nAnonymity: __All__ \n[Click Here To View Or Download File Manually](https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=all&ssl=all&anonymity=all) \nUploaded By [JARVIS](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot) \n**Here Is Your Proxy** 👇")
+HTTP_TXT = ("**Proxy Info** \nType: __HTTPS__ \nTimeOut: __10000__ \nCountry: __All__ \nSsl: All \nAnonymity: __All__ \n[Click Here To View Or Download File Manually](https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=all&ssl=all&anonymity=all) \nUploaded By [JARVIS](https://www.jarvisuserbot.com/) \n**Here Is Your Proxy** 👇")
 STARK_SOCKS4 = "https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=10000&country=all"
-SOCKS4_TXT = ("**Proxy Info** \nType: __SOCKS4__ \nTimeOut: __10000__ \nCountry: __All__ \nSsl: __Only For Http Proxy__ \nAnonymity: __Only For Http__ \n[Click Here To View Or Download File Manually](https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=10000&country=all) \nUploaded By [JARVIS](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot) \n**Here Is Your Proxy** 👇")
+SOCKS4_TXT = ("**Proxy Info** \nType: __SOCKS4__ \nTimeOut: __10000__ \nCountry: __All__ \nSsl: __Only For Http Proxy__ \nAnonymity: __Only For Http__ \n[Click Here To View Or Download File Manually](https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=10000&country=all) \nUploaded By [JARVIS](https://www.jarvisuserbot.com/) \n**Here Is Your Proxy** 👇")
 STARK_SOCKS5 = "https://api.proxyscrape.com/?request=getproxies&proxytype=socks5&timeout=10000&country=all"
-SOCKS5_TXT = ("**Proxy Info** \nType: __SOCKS4__ \nTimeOut: __10000__ \nCountry: __All__ \nSsl: __Only For Http Proxy__ \nAnonymity: __Only For Http__ \n[Click Here To View Or Download File Manually](https://api.proxyscrape.com/?request=getproxies&proxytype=socks5&timeout=10000&country=all) \nUploaded By [JARVIS](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot) \n**Here Is Your Proxy** 👇")
+SOCKS5_TXT = ("**Proxy Info** \nType: __SOCKS4__ \nTimeOut: __10000__ \nCountry: __All__ \nSsl: __Only For Http Proxy__ \nAnonymity: __Only For Http__ \n[Click Here To View Or Download File Manually](https://api.proxyscrape.com/?request=getproxies&proxytype=socks5&timeout=10000&country=all) \nUploaded By [JARVIS](https://www.jarvisuserbot.com/) \n**Here Is Your Proxy** 👇")
 
 @borg.on(admin_cmd(pattern="proxyhttp")) 
 async def starkxD(event): 
