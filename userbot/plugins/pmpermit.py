@@ -7,6 +7,17 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, errors, functions, types
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT
 from userbot.utils import admin_cmd
+from userbot import CMD_HELP
+
+
+PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
+if PMPERMIT_PIC is None:
+  WARN_PIC = "https://telegra.ph/file/08a590d1edd8852989669.jpg"
+else:
+  WARN_PIC = PMPERMIT_PIC
+
+PM_WARNS = {}
+PREV_REPLY_MESSAGE = {}
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
@@ -20,18 +31,8 @@ USER_BOT_NO_WARN = ("`Hello My Friend ! This is` **J.A.R.V.I.S**\n"
                     "**Kindly Send** `/start` **If You Want To Register Your Request**")
 
 
-PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
-if PMPERMIT_PIC is None:
-  WARN_PIC = "https://telegra.ph/file/08a590d1edd8852989669.jpg"
-else:
-  WARN_PIC = PMPERMIT_PIC
-
-PM_WARNS = {}
-PREV_REPLY_MESSAGE = {}
-
-
 if Var.PRIVATE_GROUP_ID is not None:
-    @command(pattern="^.approve ?(.*)")
+    @borg.on(admin_cmd(pattern="approve ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
            return
@@ -50,7 +51,6 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.edit("Approved to pm [{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.delete()
-                
 
     @bot.on(events.NewMessage(outgoing=True))
     async def you_dm_niqq(event):
@@ -65,6 +65,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     rko = await borg.send_message(event.chat_id, bruh)
                     await asyncio.sleep(3)
                     await rko.delete()
+                    
                     
     @command(pattern="^.block ?(.*)")
     async def approve_p_m(event):
@@ -227,3 +228,18 @@ async def hehehe(event):
             pmpermit_sql.approve(chat.id, "**My Boss Is Best🔥**")
             await borg.send_message(chat, "**This User Is My Creator ! So Auto Approved !!!!**")
            
+
+          
+CMD_HELP.update({
+    "pmpermit":
+    "\
+.approve\
+\nUsage: Approves the mentioned/replied person to PM.\
+.disapprove\
+\nUsage: dispproves the mentioned/replied person to PM.\
+\n\n.block\
+\nUsage: Blocks the person.\
+\n\n.listapproved\
+\nUsage: To list the all approved users.\
+"
+})
