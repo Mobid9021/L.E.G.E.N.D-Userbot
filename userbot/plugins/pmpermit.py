@@ -5,29 +5,32 @@ import io
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, errors, functions, types
-from userbot import ALIVE_NAME, CUSTOM_PMPERMIT
+from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd
 from userbot import CMD_HELP
 
 
+
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
-  WARN_PIC = "https://telegra.ph/file/08a590d1edd8852989669.jpg"
+  WARN_PIC = "https://telegra.ph/file/9bfc1668ebf1d9e8b541d.jpg"
 else:
   WARN_PIC = PMPERMIT_PIC
 
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
+CUSTOM_MIDDLE_PMP = Config.CUSTOM_PMPERMIT
+if CUSTOM_MIDDLE_PMP is None:
+   CUSTOM_MIDDLE_PMP = "**If You Want You Can Leave A Message Here ! My Boss Will Surely See And Reply To You Soon !**"
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
-CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**HEY THERE! PLZ WAIT UNTIL I COME ONLINE!**"
-USER_BOT_WARN_ZERO = "`You were spamming my Boss's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
-USER_BOT_NO_WARN = ("`Hello My Friend ! This is` **J.A.R.V.I.S**\n"
-                    "`Private Messaging Security Protocol ⚠️`\n\n"
-                    "**Currently My Boss**\n"
-                    f"{DEFAULTUSER} is Busy ! Please Don't Spam My Masters Inbox\n\n"
-                    f"{CUSTOM_MIDDLE_PMP} \n\n"
+USER_BOT_WARN_ZERO = "`You were spamming my Boss's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.`"
+USER_BOT_NO_WARN = ("`Hello My Friend ! This is` **J.A.R.V.I.S** \n"
+                    "`Private Messaging Security Protocol ⚠️` \n\n"
+                    "**Currently My Boss** \n"
+                   f"{DEFAULTUSER} is Busy ! Please Don't Spam My Masters Inbox \n\n"
+                   f"{CUSTOM_MIDDLE_PMP} \n\n"
                     "**Kindly Send** `/start` **If You Want To Register Your Request**")
 
 
