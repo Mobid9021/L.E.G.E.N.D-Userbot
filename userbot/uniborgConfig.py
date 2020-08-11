@@ -87,6 +87,8 @@ if ENV:
         # Very Stream
         VERY_STREAM_LOGIN = os.environ.get("VERY_STREAM_LOGIN", None)
         VERY_STREAM_KEY = os.environ.get("VERY_STREAM_KEY", None)
+        # Middle PmPermit
+        CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
         GROUP_REG_SED_EX_BOT_S = os.environ.get("GROUP_REG_SED_EX_BOT_S", r"(regex|moku|BananaButler_|rgx|l4mR)bot")
         TEMP_DIR = os.environ.get("TEMP_DIR", None)
         CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -100))

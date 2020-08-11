@@ -139,7 +139,6 @@ if bool(ENV):
     CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
     # Custom Module
-    CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
     CUSTOM_STICKER_PACK_NAME = os.environ.get("CUSTOM_STICKER_PACK_NAME", None)
     CUSTOM_ANIMATED_PACK_NAME = os.environ.get("CUSTOM_ANIMATED_PACK_NAME", None)
 
