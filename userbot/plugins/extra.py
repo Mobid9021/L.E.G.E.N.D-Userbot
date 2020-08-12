@@ -73,13 +73,13 @@ async def _(event):
 #@register(outgoing=True, pattern="^.source$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://www.jarvisuserbot.com")
+        await e.edit("https://jarvisuserbot.gitbook.io/jarvisuserbot/")
 
 @borg.on(admin_cmd("readme$"))
 #@register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://www.jarvisuserbot.com/my-works")
+        await e.edit("https://jarvisuserbot.gitbook.io/jarvisuserbot/")
 
 
 
