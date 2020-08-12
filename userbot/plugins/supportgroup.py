@@ -21,7 +21,7 @@ async def _(event):
     await event.edit("for our support group")
     animation_chars = [
             "Click here",
-            "[Support Group](https://t.me/joinchat/R5-ZBEdh9Uzix53RWtmHiA)"
+            "[Support Group](https://t.me/jarvissupportot)"
          ]
             
 
