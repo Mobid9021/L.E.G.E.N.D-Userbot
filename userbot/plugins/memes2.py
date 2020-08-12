@@ -24,57 +24,6 @@ async def iqless(e):
     await e.edit("Antivirus scan was completed \n⚠️ Warning! This  donkey has Corona Virus")
 
 
-@register(outgoing=True, pattern="^.ggl (.*)")
-async def let_me_google_that_for_you(lmgtfy_q):
-    textx = await lmgtfy_q.get_reply_message()
-    qry = lmgtfy_q.pattern_match.group(1)
-    if qry:
-        query = str(qry)
-    elif textx:
-        query = textx
-        query = query.message
-    query_encoded = query.replace(" ", "+")
-    lfy_url = f"http://lmgtfy.com/?s=g&iie=1&q={query_encoded}"
-    payload = {'format': 'json', 'url': lfy_url}
-    r = requests.get('http://is.gd/create.php', params=payload)
-    await lmgtfy_q.edit(f"Tap this blue, help yourself.\
-    \n[{query}]({r.json()['shorturl']})")
-
-
-@register(pattern=r".scam(?: |$)(.*)", outgoing=True)
-async def scam(event):
-    """ Just a small command to fake chat actions for fun !! """
-    options = [
-        'typing', 'contact', 'game', 'location', 'voice', 'round', 'video',
-        'photo', 'document', 'cancel'
-    ]
-    input_str = event.pattern_match.group(1)
-    args = input_str.split()
-    if len(args) == 0:  # Let bot decide action and time
-        scam_action = choice(options)
-        scam_time = randint(30, 60)
-    elif len(args) == 1:  # User decides time/action, bot decides the other.
-        try:
-            scam_action = str(args[0]).lower()
-            scam_time = randint(30, 60)
-        except ValueError:
-            scam_action = choice(options)
-            scam_time = int(args[0])
-    elif len(args) == 2:  # User decides both action and time
-        scam_action = str(args[0]).lower()
-        scam_time = int(args[1])
-    else:
-        await event.edit("`Invalid Syntax !!`")
-        return
-    try:
-        if (scam_time > 0):
-            await event.delete()
-            async with event.client.action(event.chat_id, scam_action):
-                await sleep(scam_time)
-    except BaseException:
-        return
-
-
 @register(outgoing=True, pattern="^.fail$")
 async def fail(e):
    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
@@ -147,15 +96,6 @@ async def paw(e):
 async def tf(e):
    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄  ")  
-      
-
-@register(outgoing=True, pattern="^.gay$")            
-async def gey(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`\n┈┈┈╭━━━━━╮┈┈┈┈┈\n┈┈┈┃┊┊┊┊┊┃┈┈┈┈┈`"
-                     "`\n┈┈┈┃┊┊╭━╮┻╮┈┈┈┈\n┈┈┈╱╲┊┃▋┃▋┃┈┈┈┈\n┈┈╭┻┊┊╰━┻━╮┈┈┈┈`"
-                     "`\n┈┈╰┳┊╭━━━┳╯┈┈┈┈\n┈┈┈┃┊┃╰━━┫┈U GAY`"
-                    "\n┈┈┈┈┈┈┏━┓┈┈┈┈┈┈")    
 
 
 @register(outgoing=True, pattern="^.bot$")
@@ -173,28 +113,28 @@ async def hey(e):
                      "`\n▏┈┈╲▂▂▂▂╱┈┈┈▏┈┈┈`")
 
 
-@register(outgoing=True, pattern="^.nou$")
+@register(outgoing=True, pattern="^.no$")
 async def nou(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`\n┈╭╮╭╮\n┈┃┃┃┃\n╭┻┗┻┗╮`"
                      "`\n┃┈▋┈▋┃\n┃┈╭▋━╮━╮\n┃┈┈╭╰╯╰╯╮`"
-                     "`\n┫┈┈  NoU\n┃┈╰╰━━━━╯`"
+                     "`\n┫┈┈  No\n┃┈╰╰━━━━╯`"
                      "`\n┗━━┻━┛`")
 
 @register(outgoing=True, pattern="^.sayhi$")
 async def shalom(e):
     await e.edit(
         "\n💛💛💛💛💛💛💛💛💛"
-        "\n💛🔷🔷🔷🔷🔷🔷🔷💛"
-        "\n💛💛💛💛🔷💛💛💛💛"
-        "\n💛💛💛💛🔷💛💛💛💛"
-        "\n💛💛💛💛🔷💛💛💛💛"
+        "\n💛🔷💛💛💛💛💛🔷💛"
+        "\n💛🔷💛💛💛💛💛🔷💛"
         "\n💛🔷🔷🔷🔷️🔷🔷🔷💛"
+        "\n💛🔷💛💛💛💛💛🔷💛"
+        "\n💛🔷💛💛💛💛💛🔷💛"
         "\n💛💛💛💛💛💛💛💛💛"
-        "\n💛💛💛💛💛💛💛💛💛"
-        "\n💛🔷💛💛️💛💛💛🔷💛"
         "\n💛🔷🔷🔷🔷🔷🔷🔷💛"
-        "\n💛🔷🔷🔷🔷🔷🔷️🔷💛"
-        "\n💛🔷💛💛💛💛️💛🔷💛"
+        "\n💛💛💛💛️🔷💛💛💛💛"
+        "\n💛💛💛💛🔷💛💛💛💛"
+        "\n💛💛💛💛🔷💛💛💛💛"
+        "\n💛🔷🔷🔷🔷🔷🔷🔷💛"
         "\n💛💛💛💛💛💛💛💛💛")
 
