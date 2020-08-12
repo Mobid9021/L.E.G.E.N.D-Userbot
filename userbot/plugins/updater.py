@@ -16,7 +16,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "please check out to an official branch, and re-start the updater."
 )
 OFFICIAL_UPSTREAM_REPO = "https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/"
-BOT_IS_UP_TO_DATE = "Friday userbot is up-to-date!."
+BOT_IS_UP_TO_DATE = "JARVIS UserBot is up-to-date!."
 NEW_BOT_UP_DATE_FOUND = (
     "**JARVIS System Update Found For** {branch_name}\n"
     "\n\n{changelog}\n"
@@ -29,9 +29,9 @@ NEW_UP_DATE_FOUND = (
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
-NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
+NO_HEROKU_APP_CFGD = "No Heroku Application found, But a Key Given ! ? 🧐 "
 HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
-RESTARTING_APP = "re-starting heroku application"
+RESTARTING_APP = "Re-Starting Server Plz Wait A While ......"
 # -- Constants End -- #
 
 
@@ -72,7 +72,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("Pulling Update From Branch **master** !!!!")
+        await message.edit("Updates Found Plz Wait Until I Sync It To Server !!!!")
         await asyncio.sleep(4)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -109,7 +109,7 @@ async def updater(message):
                     if i.name == Var.HEROKU_APP_NAME:
                         heroku_app = i
                 if heroku_app is None:
-                    await message.edit("Invalid APP Name. Please set the name of your bot in heroku in the var HEROKU_APP_NAME.")
+                    await message.edit("Invalid APP Name. Please Set The Name Of Your Bot In Heroku in the VAR HEROKU_APP_NAME.")
                     return
                 heroku_git_url = heroku_app.git_url.replace(
                     "https://",
@@ -123,7 +123,7 @@ async def updater(message):
                 asyncio.get_event_loop().create_task(deploy_start(bot, message, HEROKU_GIT_REF_SPEC, remote))
 
             else:
-                await message.edit("Please create the var HEROKU_APP_NAME as the key and the name of your bot in heroku as your value.")
+                await message.edit("Please Create The VAR HEROKU_APP_NAME As The Key And The Name of Your Bot in Heroku As Your Value !!!")
                 return
         else:
             await message.edit(NO_HEROKU_APP_CFGD)
@@ -140,7 +140,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("**ᴛʜᴇ ʟᴀᴛᴇꜱᴛ ʙʀᴀɴᴄʜ** `ᴍᴀꜱᴛᴇʀ` **ʜᴀꜱ ʙᴇᴇɴ ᴘᴜꜱʜᴇᴅ ᴛᴏ ʜᴇʀᴏᴋᴜ▣™** \n**ɴᴏᴡ ᴛʀʏɪɴɢ ᴀ ʀᴇꜱᴛᴀʀᴛ ᴛᴏ ᴄᴏᴍᴘʟᴇᴛᴇ ᴜᴘᴅᴀᴛɪᴏɴ ᴘʀᴏᴄᴇꜱꜱ ⚠️ !!** ᵀᵒ ᶜʰᵉᶜᵏ ᴵᶠ ᴵ ᵃᵐ ᴬˡⁱᵛᵉ ᴶᵘˢᵗ ᴰᵒ `.ᵃˡⁱᵛᵉ` ᵒʳ `.ʰᵉˡᵖ` !!!! ᵀʰᵃⁿᵏ ᶠᵒʳ ᵁˢⁱⁿᵍ ᴊᴀʀᴠɪꜱ ᴜꜱᴇʀʙᴏᴛ ꜱᴇʀᴠɪᴄᴇ➲\n⇩⇩⇩⇩⇩⇩⇩⇩\n💟J.A.R.V.I.S💟")
+    await message.edit("I Am Restarting Me. /nPlz Wait Versions Are Being Increased, /nUpdated SuccessFully /nNow Restarting To Finish The Update !!! /nType .alive or .ping After 5 Min... ")
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
