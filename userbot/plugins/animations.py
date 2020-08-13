@@ -123,27 +123,7 @@ async def _(event):
         ]
     for i in animation_ttl:
             await asyncio.sleep(animation_interval)
-            await event.edit(animation_chars[i % 12])
-
-            
-@borg.on(admin_cmd(pattern="wtf$"))
-async def _(event):
-    if event.fwd_from:
-        return
-    animation_interval = 0.8
-    animation_ttl = range(0, 5)
-    await event.edit("wtf")
-    animation_chars = [
-            "What",
-            "What The",
-            "What The F",
-            "What The F Brah",
-            "What The F Brah\nhttps://telegra.ph//file/f3b760e4a99340d331f9b.jpg"
-        ]
-    for i in animation_ttl:
-        	
-            await asyncio.sleep(animation_interval)
-            await event.edit(animation_chars[i % 5 ])           
+            await event.edit(animation_chars[i % 12])           
             
 @borg.on(admin_cmd(pattern="ding$"))
 async def _(event):
@@ -854,50 +834,6 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 30])
 
-@borg.on(admin_cmd(pattern=r"repe$", outgoing=True))
-async def _(event):
-    if event.fwd_from:
-        return
-    animation_interval = 0.2
-    animation_ttl = range(0, 30)
-    await event.edit("repe")
-    animation_chars = [
-        
-            "**r**",
-            "**ra**",
-            "**rap**",
-            "**rape**",
-            "**rape_**",    
-            "**rape_t**",
-            "**rape_tr**",
-            "**rape_tra**",
-            "**rape_trai**",
-            "**rape_train**",
-            "**ape_train🚅**",
-            "**pe_train🚅🚃🚃**",
-            "**e_train🚅🚃🚃🚃**",
-            "**_train🚅🚃🚃🚃🚃**",
-            "**train🚅🚃🚃🚃🚃🚃**",
-            "**rain🚅🚃🚃🚃🚃🚃🚃**",
-            "**ain🚅🚃🚃🚃🚃🚃🚃🚃**",
-            "**in🚅🚃🚃🚃🚃🚃🚃🚃🚃**",
-            "**n🚅🚃🚃🚃🚃🚃🚃🚃🚃🚃**",
-            "🚅🚃🚃🚃🚃🚃🚃🚃🚃🚃",
-            "🚃🚃🚃🚃🚃🚃🚃🚃🚃",
-            "🚃🚃🚃🚃🚃🚃🚃🚃",
-            "🚃🚃🚃🚃🚃🚃🚃",
-            "🚃🚃🚃🚃🚃🚃",
-            "🚃🚃🚃🚃🚃",
-            "🚃🚃🚃🚃",
-            "🚃🚃🚃",
-            "🚃🚃",
-            "🚃",
-            "**rApEd**"
- ]
-    for i in animation_ttl:
-            await asyncio.sleep(animation_interval)
-            await event.edit(animation_chars[i % 30])
-
 @borg.on(admin_cmd(pattern=f"isro$"))
 async def _(event):
     if event.fwd_from:
@@ -1114,12 +1050,12 @@ async def _(event):
             "😧",
             "😡",
             "😢",
-            "‎**Repo of catuserbot**",
+            "‎**Repo of JARVIS**",
             "😁",
             "😧",
             "😡",
             "😢",
-            "[CAT IS BEST](https://github.com/Sur-vivor/CatUserbot)",
+            "[JARVIS IS BEST](https://jarvisuserbot.gitbook.io/jarvisuserbot/)",
             "__**Good to See you Guys....**__"
         ]
     for i in animation_ttl:
