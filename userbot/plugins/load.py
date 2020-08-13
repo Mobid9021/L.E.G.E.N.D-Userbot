@@ -4,8 +4,7 @@ Available Commands:
 .square
 .up
 .round
-.heart
-.anim
+.hheart
 .fnl"""
 
 from telethon import events
@@ -198,7 +197,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "heart":
+    if input_str == "hheart":
 
         await event.edit(input_str)
 
