@@ -43,4 +43,4 @@ async def approve_p_m(event):
                 NO_PM_LOG_USERS.append(chat.id)
                 await event.edit("Won't Log Messages from this chat")
                 await asyncio.sleep(3)
-                await event.delete()v
+                await event.delete()
