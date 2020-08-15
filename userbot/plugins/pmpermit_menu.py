@@ -3,7 +3,7 @@ Support chatbox for pmpermit.
 Used by incoming messages with trigger as /start
 Will not work for already approved people.
 Credits: @mrconfused
-Edited: Jarvis UserBot
+Edited: THE L.E.G.E.N.D UserBot
 """
 import asyncio
 import io 
@@ -36,7 +36,7 @@ async def _(event):
                "`3`. To enquire something\n"
                "`4`. To request something\n")
         ONE = ("`I Have Registered Your Request ! Don't Worry My Master Will Be Here Soon To Chat With You !` \n\n")
-        TWO = ("`Please Don't Spam My Master Inbox ! You Have Been Reported Until Further Notice !`")
+        TWO = ("`If you want to spam my master's inbox, then run away right now or else you would get into big problem !`")
         FOUR = ("`Okay ! I See You Can Request Your Demands ! Please Wait Untill My Master Approves You` !")
         FIVE = ("`Okay. please have the basic manners as to not bother my master too much. If he wishes to help you, he will respond to you soon.`\n**Kindly Do not ask repeatdly else you will be blocked and reported.**")
         LWARN = ("**This is your last warning. DO NOT send another message else you will be blocked and reported. Keep patience. My master will respond you ASAP.**\n__Use__ `/start` __to go back to the main menu.__")
