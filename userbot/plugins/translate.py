@@ -33,7 +33,7 @@ async def _(event):
         after_tr_text = translated.text
         # TODO: emojify the :
         # either here, or before translation
-        output_str = """**🔥𝕋𝕣𝕒𝕟𝕤𝕝𝕒𝕥𝕖𝕕 𝔹𝕪 𝕁𝔸ℝ𝕍𝕀𝕊🔥** 
+        output_str = """**🔥Translated by: THE L.E.G.E.N.D🔥** 
          Source **( {} )**
          Translation **( {} )**
          {}""".format(
