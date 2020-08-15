@@ -19,7 +19,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
-                "© JARVISUserBot Help",
+                "© THE L.E.G.E.N.D Help",
                 text="{}\nTotal Plugins Loaded: {}".format(
                     query, len(CMD_LIST)),
                 buttons=buttons,
@@ -38,7 +38,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Kindly Don't Use My Userbot ! \nGet Your Own Userbot. To Learn Ib @jarvisotbot"
+            reply_pop_up_alert = "Kindly Don't Use My Userbot ! \nGet Your Own Userbot."
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -57,7 +57,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Get your own JARVIS, don't use Mine\n ib @jarvisotbot for learning how to get userbot!"
+            reply_pop_up_alert = "Get your own THE L.E.G.E.N.D Userbot, don't use Mine\n ib @The_Anonymous_Legend for learning how to get userbot!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
         data=re.compile(b"us_plugin_(.*)")
@@ -76,7 +76,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             reply_pop_up_alert = help_string
         reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-            © J.A.R.V.I.S Userbot ".format(plugin_name)
+            © THE L.E.G.E.N.D Userbot ".format(plugin_name)
         try:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         except:
@@ -92,15 +92,15 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 
 
 def paginate_help(page_number, loaded_plugins, prefix):
-    number_of_rows = 5
-    number_of_cols = 5
+    number_of_rows = 7
+    number_of_cols = 2
     helpable_plugins = []
     for p in loaded_plugins:
         if not p.startswith("_"):
             helpable_plugins.append(p)
     helpable_plugins = sorted(helpable_plugins)
     modules = [custom.Button.inline(
-        "{} {} {}".format ("🎉", x , "🎉"),
+        "{} {} {}".format ("✪", x , "✪"),
         data="us_plugin_{}".format(x))
         for x in helpable_plugins]
     pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
