@@ -25,7 +25,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/hello")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="⚡Boss Listen To This Audio" + naam +"\n`Check out` [JARVIS](https://github.com/jarvis210904/JARVISuserbot)")
+              await borg.send_file(event.chat_id, audio, caption="⚡Boss Listen To This Audio" + naam +"\n`Check out` [THE L.E.G.E.N.D](https://github.com/KeshavTech246/THE-L.E.G.E.N.D-Userbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!")
@@ -36,7 +36,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/helpme")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Check Out Sir**\n`Check out` [JARVIS](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Check Out Sir**\n`Check out` [THE L.E.G.E.N.D](https://github.com/KeshavTech246/THE-L.E.G.E.N.D-Userbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!`")
@@ -47,7 +47,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/movies")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Here is Movie**\n`Check out` [JARVIS](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Here is Movie**\n`Check out` [THE L.E.G.E.N.D](https://github.com/KeshavTech246/THE-L.E.G.E.N.D-Userbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!`")
@@ -58,7 +58,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/music")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Hoi ! Here iz music**\n`Check out` [JARVIS](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Hi ! Here Sz music**\n`Check out` [THE L.E.G.E.N.D](https://github.com/KeshavTech246/THE-L.E.G.E.N.D-Userbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!`")
@@ -69,7 +69,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/meme")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Lol**\n`Check out` [JARVIS](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Lol**\n`Check out` [THE L.E.G.E.N.D](https://github.com/KeshavTech246/THE-L.E.G.E.N.D-Userbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @jarvisotbot `and retry!`")
