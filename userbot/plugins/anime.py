@@ -1,8 +1,8 @@
 """
 Random Anime Chooser Plugin for Userbot
 usage = .{anime_genre} number of times(integer) 
-By : - @Ironman2192004
-
+© Ultroid
+By - @WhySooSerious, @TheUnusualPsychopath
 """
 from telethon import events
 import asyncio
