@@ -72,7 +72,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("Updates Found Plz Wait Until I Sync It To Server !!!!")
+        await message.edit("Updates Found Plz Wait Until I Connect To the Server !!!!")
         await asyncio.sleep(4)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -140,7 +140,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("I Am Restarting Me. \nPlz Wait Versions Are Being Increased, \nUpdated SuccessFully \nNow Restarting To Finish The Update !!! \nType .alive or .ping After 5 Min... ")
+    await message.edit("I Am Restarting Myself. \nPlz Wait Versions Are Being Increased, \nUpdated SuccessFully \nNow Restarting Myself To Finish The Update !!! \nType .alive or .ping After Some time to check if I am alive... ")
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
