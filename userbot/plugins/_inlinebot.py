@@ -19,7 +19,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
-                "© THE L.E.G.E.N.D Help",
+                "© L.E.G.E.N.D Help",
                 text="{}\nTotal Plugins Loaded: {}".format(
                     query, len(CMD_LIST)),
                 buttons=buttons,
