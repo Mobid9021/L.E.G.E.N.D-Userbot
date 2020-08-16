@@ -7,13 +7,13 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = "https://telegra.ph/file/e5c4be66f4c034560b736.jpg"
 pm_caption = "**THE L.E.G.E.N.D is online**\n"
 
-pm_caption += f"**My Legendary Boss**            : {DEFAULTUSER}\n"
+\n pm_caption += f"**My Legendary Boss**            : {DEFAULTUSER}\n"
 
-pm_caption += "Telethon Version            : 4.8\n"
+\n pm_caption += "Telethon Version            : 4.8\n"
 
 pm_caption += "Python Version            : 3.8.5\n"
 
-pm_caption += " I am a cool userbot with many functions managed by [this legendary person.](https://t.me/The_Anonymous_Legend) Contact him for any help or support\n"
+pm_caption += "I am a cool userbot with many functions managed by [this legendary person.](https://t.me/The_Anonymous_Legend) Contact him for any help or support\n"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
