@@ -18,7 +18,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
 OFFICIAL_UPSTREAM_REPO = "https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/"
 BOT_IS_UP_TO_DATE = "JARVIS UserBot is up-to-date!."
 NEW_BOT_UP_DATE_FOUND = (
-    "**JARVIS System Update Found For** {branch_name}\n"
+    "**L.E.G.E.N.D System Update Found For** {branch_name}\n"
     "\n\n{changelog}\n"
     "Pulling Updates !!"
 )
