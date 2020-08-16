@@ -56,4 +56,4 @@ async def _(event):
 
                 await event.edit(animation_chars[i % 11])
     else:
-        await event.edit("No User is Defined\n are u dumb\n reply to a user.")
+        await event.edit("No User is Defined. Please reply to a user who you want to hack.")
