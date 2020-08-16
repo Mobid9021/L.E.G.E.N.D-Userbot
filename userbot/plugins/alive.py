@@ -4,8 +4,8 @@ from uniborg.util import admin_cmd
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
-PM_IMG = "https://telegra.ph/file/3dcab7a6a6309042ffb0c.jpg"
-pm_caption = "**ᴊᴀʀᴠɪꜱ ɪꜱ ᴏɴʟɪɴᴇ**\n"
+PM_IMG = "https://telegra.ph/file/e5c4be66f4c034560b736.jpg"
+pm_caption = "**L.E.G.E.N.D is ONLINE**\n"
 
 pm_caption += f"**My Legendary Boss**: {DEFAULTUSER}\n"
 
