@@ -31,7 +31,7 @@ The Easy Way
  Simply clone the repository and run the main file:
 
 ```text
-git clone https://github.com/KeshavTech246/THE-L.E.G.E.N.D-Userbot.git
+git clone https://github.com/KeshavTech246/L.E.G.E.N.D-Userbot.git
 cd Userbot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
