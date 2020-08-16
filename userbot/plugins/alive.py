@@ -9,13 +9,13 @@ pm_caption = "**L.E.G.E.N.D is ONLINE**\n"
 
 pm_caption += f"\n**My Legendary Boss**: {DEFAULTUSER}\n"
 
-pm_caption += "\nTelethon Version: 4.8\n"
+pm_caption += "\n**Telethon Version**: 4.8\n"
 
-pm_caption += "\nPython Version: 3.8.5\n"
+pm_caption += "\n**Python Version**: 3.8.5\n"
 
-pm_caption += "\nLicense: [AGPL-3.0 Licence](https://github.com/KeshavTech246/L.E.G.E.N.D-userbot/blob/master/LICENSE/)\n"
+pm_caption += "\n**License**: [AGPL-3.0 Licence](https://github.com/KeshavTech246/L.E.G.E.N.D-userbot/blob/master/LICENSE/)\n"
 
-pm_caption += "\nCopyright by: [L.E.G.E.N.D](https://github.com/KeshavTech246)\n"
+pm_caption += "\n**Copyright by**: [L.E.G.E.N.D](https://github.com/KeshavTech246)\n"
 
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
