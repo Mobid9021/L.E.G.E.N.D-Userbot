@@ -15,8 +15,8 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/KeshavTech246/L.E.G.E.N.D-Userbot/"
-BOT_IS_UP_TO_DATE = "JARVIS UserBot is up-to-date!."
+OFFICIAL_UPSTREAM_REPO = "https://github.com/KeshavTech246/L.E.G.E.N.D-userbot"
+BOT_IS_UP_TO_DATE = "L.E.G.E.N.D UserBot is up-to-date!."
 NEW_BOT_UP_DATE_FOUND = (
     "**L.E.G.E.N.D System Update Found For** {branch_name}\n"
     "\n\n{changelog}\n"
