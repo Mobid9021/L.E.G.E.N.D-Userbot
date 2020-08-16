@@ -7,9 +7,9 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = "https://telegra.ph/file/e5c4be66f4c034560b736.jpg"
 pm_caption = "**THE L.E.G.E.N.D is online**\n"
 
-pm_caption += f"**M̴y̴ ̴B̴o̴s̴s̴**            : {DEFAULTUSER}\n"
+pm_caption += f"**My Legendary Boss**            : {DEFAULTUSER}\n"
 
-pm_caption += " [┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/jarvisot)"
+pm_caption += " [I am a cool userbot with many functions managed by this legendary person. Contact him for any help or suppoet](https://t.me/The_Anonymous_Legend)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
