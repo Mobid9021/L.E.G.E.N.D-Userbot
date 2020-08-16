@@ -11,7 +11,7 @@ pm_caption += f"**My Legendary Boss**            : {DEFAULTUSER}\n"
 
 
 
-pm_caption += " [I am a cool userbot with many functions managed by this legendary person. Contact him for any help or suppoet](https://t.me/The_Anonymous_Legend)"
+pm_caption += " I am a cool userbot with many functions managed by [this legendary person.](https://t.me/The_Anonymous_Legend) Contact him for any help or support"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
