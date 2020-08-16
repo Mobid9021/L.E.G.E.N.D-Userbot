@@ -1,7 +1,7 @@
 {
-  "name": "JARVIS",
-  "description": "Userbot created by a Poor Student and join https://t.me/jarvissupportot for any problems or support",
-  "logo": "https://github.com/jarvis210904/J.A.R.V.I.S-Userbot/blob/master/jarvis.jpg?raw=true",
+  "name": "L.E.G.E.N.D",
+  "description": "Userbot created to make your stuff easy",
+  "logo": "https://telegra.ph/file/e5c4be66f4c034560b736.jpg?raw=true",
     "keywords": [
     "telegram",
     "userbot",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://www.jarvisuserbot.com/",
+  "repository": "https://www.github.com/KeshavTech246/L.E.G.E.N.D-Userbot/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -33,7 +33,7 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @anonymoushackker.",
+      "description": "Fill your Full name or Username like @The_Anonymous_Legend.",
       "value": ""
     },
     "APP_ID": {
@@ -63,7 +63,7 @@
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "Get this value from https://jarvisuserbot.jarvis210904.repl.run/",
+      "description": "Get this value from https://friday.starkgang.repl.run/",
       "value": ""
     },
     "GITHUB_ACCESS_TOKEN": {
