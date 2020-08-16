@@ -7,9 +7,9 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = "https://telegra.ph/file/e5c4be66f4c034560b736.jpg"
 pm_caption = "**THE L.E.G.E.N.D is online**\n"
 
-\n pm_caption += f"**My Legendary Boss**            : {DEFAULTUSER}\n"
+pm_caption += f"**My Legendary Boss**            : {DEFAULTUSER}\n"
 
-\n pm_caption += "Telethon Version            : 4.8\n"
+pm_caption += "Telethon Version            : 4.8\n"
 
 pm_caption += "Python Version            : 3.8.5\n"
 
