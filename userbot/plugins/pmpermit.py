@@ -13,7 +13,7 @@ from userbot import CMD_HELP
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
-  WARN_PIC = "https://telegra.ph/file/9bfc1668ebf1d9e8b541d.jpg"
+  WARN_PIC = "https://telegra.ph/file/e5c4be66f4c034560b736.jpg"
 else:
   WARN_PIC = PMPERMIT_PIC
 
@@ -25,8 +25,8 @@ if CUSTOM_MIDDLE_PMP is None:
    CUSTOM_MIDDLE_PMP = "**If You Want You Can Leave A Message Here ! My Boss Will Surely See And Reply To You Soon !**"
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
-USER_BOT_WARN_ZERO = "`You were spamming my Boss's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.`"
-USER_BOT_NO_WARN = ("`Hello My Friend ! This is` **J.A.R.V.I.S** \n"
+USER_BOT_WARN_ZERO = "`You were spamming my Boss's inbox, henceforth you have been blocked by my master's userbot.`"
+USER_BOT_NO_WARN = ("`Hello My Friend ! This is` **L.E.G.E.N.D** \n"
                     "`Private Messaging Security Protocol ⚠️` \n\n"
                     "**Currently My Boss** \n"
                    f"{DEFAULTUSER} is Busy ! Please Don't Spam My Masters Inbox \n\n"
