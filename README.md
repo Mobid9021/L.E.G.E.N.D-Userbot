@@ -11,7 +11,7 @@ About: Best User Bot To Manage Your Telegram Account
 
 ##  Most PowerFul And Better And Secure
 
-## By Team \#L.E.G.E.N.D
+## By Team \#LEGEND
 
 
 ## This Bot is Made With care and it has No Adult Contents and Abusive Memes. If Any, Tell in Issue Column With Command Name.
