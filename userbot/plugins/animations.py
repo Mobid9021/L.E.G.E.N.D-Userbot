@@ -1,6 +1,4 @@
-#This Plugin Is Made By JARVIS And Hellboi-Atul.. We Can Claim Copyright Any Time If You Copy 
-#This Belongs To JARVIS USERBOT and DARKCOBRA.....
-#If You Need This Plugin In Your Bot Plz Contact Me by @JarvisOtbot
+#This Plugin Is The Combination of all animation plugins.
 
 from telethon import events
 import asyncio
@@ -86,12 +84,12 @@ async def _(event):
             "`Shivamani : May I Know Who Is This?`",
             f"`Me: Yo Brah, I Am` {DEFAULTUSER} ",
             "`Shivamani : OMG!!! Long time no see, Wassup cat...\nI'll Make Sure That Guy Account Will Get Blocked Within 24Hrs.`",
-            "`Me: Thanks, See You Later Brah.`",
-            "`Shivamani : Please Don't Thank Brah, Telegram Is Our's. Just Gimme A Call When You Become Free.`",
+            "`Me: Thanks, See You Later Bro.`",
+            "`Shivamani : Please Don't Thank Bro, Telegram Is Our's. Just Gimme A Call When You Become Free.`",
             "`Me: Is There Any Issue/Emergency???`",
-            "`Shivamani : Yes Sur, There Is A Bug In Telegram v69.6.9.\nI Am Not Able To Fix It. If Possible, Please Help Fix The Bug.`",
+            "`Shivamani : Yes Sir, There Is A Bug In Telegram v69.6.9.\nI Am Not Able To Fix It. If Possible, Please Help Fix The Bug.`",
             "`Me: Send Me The App On My Telegram Account, I Will Fix The Bug & Send You.`",
-            "`Shivamani : Sure Sur \nTC Bye Bye :)`",
+            "`Shivamani : Sure Sir \nTC Bye Bye :)`",
             "`Private Call Disconnected.`"
         ]
     for i in animation_ttl:
