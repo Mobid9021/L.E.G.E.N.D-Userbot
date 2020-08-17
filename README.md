@@ -16,7 +16,7 @@ By Team \#L.E.G.E.N.D
 
 ## This Bot is Made With care and it has No Adult Contents and Abusive Memes. If Any, Tell in Issue Column With Command Name.
 
-  Special Thanks to
+  "Special Thanks to /n"
      [JARVIS USERBOT](https://github.com/jarvis210904/J.A.R.V.I.S-Userbot)
 
 
