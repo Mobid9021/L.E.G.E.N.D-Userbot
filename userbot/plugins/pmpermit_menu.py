@@ -29,7 +29,7 @@ async def _(event):
             return
         PM = ("`Hello. You are accessing the availabe menu of my peru master,`"
               f"{DEFAULTUSER}.\n"
-               "__Let's make this smooth and let me know why you are here ! So Select A Reason And Send it's Number__\n"
+               "__Its good that you tried to start a valid conversatio  ! So Select A Reason And Send it's Number__\n"
                "**Choose one of the following reasons why you are here:**\n\n"
                "`1`. To chat with my master\n"
                "`2`. To Spam my master's Inbox.\n"
